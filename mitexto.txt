@@ -1,3 +1,7 @@
 ola mundo
 estoy en github
+<<<<<<< HEAD
 estuve en gitea
+=======
+hola gitea
+>>>>>>> d17ccc7dfea4d52e1cc7aceae1a544712524cdf9
