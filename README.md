@@ -6,6 +6,5 @@
 ###### Cabeceira 6
 **negrita**
 *cursiva*
-> e que non pode ser
 _tachado_
 
