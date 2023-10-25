@@ -6,5 +6,8 @@
 ###### Cabeceira 6
 **negrita**
 *cursiva*
-_tachado_
-
+>Esto debería ser una cita
+~~tachado~~
+a^2^ + b^2^ no funciona
+H~2~O no funciona
+==subrayado==.
