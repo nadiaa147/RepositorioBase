@@ -7,7 +7,14 @@
 **negrita**
 *cursiva*
 >Esto debería ser una cita
+
 ~~tachado~~
-a^2^ + b^2^ no funciona
-H~2~O no funciona
-==subrayado==.
+
+[Guía de github](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+***cursiva y negrita***
+
+H<sub>subindice</sub>
+
+H<sup>superindice</sup>
+
