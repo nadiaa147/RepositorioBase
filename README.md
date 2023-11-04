@@ -18,12 +18,12 @@ H<sub>subindice</sub>
 
 H<sup>superindice</sup>
 
-- Nadia
-* Iria
+- Puntos
+* Puntos
 
-1. Nadia
-1. Iria
-1. Nadia
+1. Listado
+1. Listado
+1. Listado
 
 ---
 
@@ -39,11 +39,30 @@ H<sup>superindice</sup>
    - Subapartado
    - Subapartado
 
-1. Otro apartado
-   - Subapartado
-   - Subapartado
-
-^[1] Esta es la nota
+Esta es la nota[^1].
 
 ---
+
+### Lista de tareas
+
+- [ ] Tarea por hacer
+
+- [ ] Tarea por hacer 2
+
+- [x] Tarea completada
+
+[^1]: Aqui está la nota
+
+---
+
+| nombre | curso |
+|--------|-------|
+|  Nadia |   A   |
+|  Iria  |   B   |
+
+emoji 😎 ( : + código)
+
+$$V_{sphere} = \frac{4}{3}\pi r<sup>3</sup>$$
+
+
 
