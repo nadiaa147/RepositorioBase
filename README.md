@@ -39,6 +39,8 @@ H<sup>superindice</sup>
    - Subapartado
    - Subapartado
 
+---
+
 Esta es la nota[^1].
 
 ---
@@ -60,9 +62,32 @@ Esta es la nota[^1].
 |  Nadia |   A   |
 |  Iria  |   B   |
 
+
 emoji 😎 ( : + código)
 
 $$V_{sphere} = \frac{4}{3}\pi r<sup>3</sup>$$
 
+![logo gitea](https://github.com/nadiaa147/RepositorioBase/blob/master/logo.svg)
+
+
+
+```
+code block
+```
+
+```ruby
+importante
+```
+
+
+`filtro`
+
+
+<dl>
+   <dt>Instituto
+   <dd>Lugar dónde se da clase
+<dl>
+   <dt>Ordenador
+   <dd>Es un objeto
 
 
