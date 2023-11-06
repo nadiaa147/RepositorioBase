@@ -72,17 +72,18 @@ $$V_{sphere} = \frac{4}{3}\pi r^3$$
 ![logo gitea](logo.svg)
 
 
+`filter(function, sequence)`
+
 
 ```
-code block
+ages = [20. 33. 44. 66. 78. 92]
+filtered_ages = filter(lambda a: a>50, ages)
+print(list(filtered_ages))
 ```
 
 ```ruby
 importante
 ```
-
-
-`filtro`
 
 
 <dl>
@@ -91,5 +92,4 @@ importante
 <dl>
    <dt>Ordenador
    <dd>Es un objeto
-
 
