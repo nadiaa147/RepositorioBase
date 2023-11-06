@@ -8,6 +8,8 @@
 *cursiva*
 >Esto debería ser una cita
 
+==es importante== (no funciona)
+
 ~~tachado~~
 
 [Guía de github](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
