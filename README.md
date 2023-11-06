@@ -67,7 +67,7 @@ Esta es la nota[^1].
 
 emoji 😎 ( : + código)
 
-$$V_{sphere} = \frac{4}{3}\pi r<sup>3</sup>$$
+$$V_{sphere} = \frac{4}{3}\pi r^3$$
 
 ![logo gitea](https://github.com/nadiaa147/RepositorioBase/blob/master/logo.svg)
 
