@@ -69,7 +69,7 @@ emoji 😎 ( : + código)
 
 $$V_{sphere} = \frac{4}{3}\pi r^3$$
 
-![logo gitea](https://github.com/nadiaa147/RepositorioBase/blob/master/logo.svg)
+![logo gitea](logo.svg)
 
 
 
