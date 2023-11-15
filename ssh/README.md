@@ -1,95 +1,16 @@
-# *Cabeceira 1*
-## Cabeceira 2
-### Cabeceira 3
-#### Cabeceira 4
-##### Cabeceira 5
-###### Cabeceira 6
-**negrita**
-*cursiva*
->Esto debería ser una cita
+## *Claves SSH*
 
-==es importante== (no funciona)
+> Su nombre viene de **S**ecure **S**hell
 
-~~tachado~~
+*Función:* Sirve para comunicar datos cifrados (encriptados) entre 2 terminales. 
+ Es una conexión muy rápida.
 
-[Guía de github](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+ Estas claves pueden usarse para mejorar la seguridad ya que no se usan datos de **usuario** ni de **contraseña**.
 
-***cursiva y negrita***
+ *Creación de claves:* Cuando las creémos, debemos hacer dos:
 
-H<sub>subindice</sub>
+ - **Privada:** Queda en el propio ordenador.
+ - **Pública:** Será registrada en los lugares en los que nos queramos conectar
 
-H<sup>superindice</sup>
-
-- Puntos
-* Puntos
-
-1. Listado
-1. Listado
-1. Listado
-
----
-
-### Apartados
-
-1. Apartado
-   - Subapartado
-     - Doble subapartado
-
-### Apartados
-
-1. Apartado
-   - Subapartado
-   - Subapartado
-
----
-
-Esta es la nota[^1].
-
----
-
-### Lista de tareas
-
-- [ ] Tarea por hacer
-
-- [ ] Tarea por hacer 2
-
-- [x] Tarea completada
-
-[^1]: Aqui está la nota
-
----
-
-| nombre | curso |
-|--------|-------|
-|  Nadia |   A   |
-|  Iria  |   B   |
-
-
-emoji 😎 ( : + código)
-
-$$V_{sphere} = \frac{4}{3}\pi r^3$$
-
-![logo gitea](logo.svg)
-
-
-`filter(function, sequence)`
-
-
-```
-ages = [20. 33. 44. 66. 78. 92]
-filtered_ages = filter(lambda a: a>50, ages)
-print(list(filtered_ages))
-```
-
-```ruby
-importante
-```
-
-
-<dl>
-   <dt>Instituto
-   <dd>Lugar dónde se da clase
-<dl>
-   <dt>Ordenador
-   <dd>Es un objeto
-
+ #### Túnel SSH:
+Sirve para saltarse cierta protección
