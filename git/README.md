@@ -1,95 +1,34 @@
-# *Cabeceira 1*
-## Cabeceira 2
-### Cabeceira 3
-#### Cabeceira 4
-##### Cabeceira 5
-###### Cabeceira 6
-**negrita**
-*cursiva*
->Esto debería ser una cita
+## *GIT:*
 
-==es importante== (no funciona)
+#### *Qué es?*
 
-~~tachado~~
+Es un sistema de control de versiones que se utiliza para controlar los diferentes archivos usados por diferentes personas, las cuales pueden trabajar en paralelo usando programas o herramientas específicas.
 
-[Guía de github](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+Es una especie de “nube”, pero lleva un registro de los cambios.
 
-***cursiva y negrita***
+Unha vez instalamos git, debemos establecer nuestro usuario y correo electrónico con dos comandos:
 
-H<sub>subindice</sub>
+- git config --global user.name
+- git config --global user.email
 
-H<sup>superindice</sup>
+Después de esto, es necesario crear un cartafol (directorio), donde irá el repositorio.
 
-- Puntos
-* Puntos
+### *ETAPAS DE GIT:*
 
-1. Listado
-1. Listado
-1. Listado
-
----
-
-### Apartados
-
-1. Apartado
-   - Subapartado
-     - Doble subapartado
-
-### Apartados
-
-1. Apartado
-   - Subapartado
-   - Subapartado
-
----
-
-Esta es la nota[^1].
-
----
-
-### Lista de tareas
-
-- [ ] Tarea por hacer
-
-- [ ] Tarea por hacer 2
-
-- [x] Tarea completada
-
-[^1]: Aqui está la nota
-
----
-
-| nombre | curso |
-|--------|-------|
-|  Nadia |   A   |
-|  Iria  |   B   |
-
-
-emoji 😎 ( : + código)
-
-$$V_{sphere} = \frac{4}{3}\pi r^3$$
-
-![logo gitea](logo.svg)
-
-
-`filter(function, sequence)`
-
+1.	**Repositorio:**
+Aquí tenemos acumulados los cambios. Para pasar a la siguiente etapa debemos hacer un “pull” del sitio donde la información fue cambiada.
 
 ```
-ages = [20. 33. 44. 66. 78. 92]
-filtered_ages = filter(lambda a: a>50, ages)
-print(list(filtered_ages))
+git pull
 ```
 
-```ruby
-importante
+1.	**Cartafol de traballo:**
+Aquí estamos cambiando el contenido de los archivos. Para esto tenemos que hacer un “git add”. De esta manera los estamos añadiendo al repositorio.
+
+```
+git add <archivo>
 ```
 
-
-<dl>
-   <dt>Instituto
-   <dd>Lugar dónde se da clase
-<dl>
-   <dt>Ordenador
-   <dd>Es un objeto
-
+1.	**Preparación:**
+Para esto tenemos que hacer un commit, que tiene que llevar un mensaje claro identificándose.
+git commit -m “mensaje”
