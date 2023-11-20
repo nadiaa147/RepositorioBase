@@ -13,4 +13,4 @@
  - **Pública:** Será registrada en los lugares en los que nos queramos conectar
 
  #### Túnel SSH:
-Sirve para saltarse cierta protección
+Sirve para saltarse ciertas prohibiciones.
