@@ -8,8 +8,9 @@ Es una especie de “nube”, pero lleva un registro de los cambios.
 
 Unha vez instalamos git, debemos establecer nuestro usuario y correo electrónico con dos comandos:
 
-- git config --global user.name
-- git config --global user.email
+`git config --global user.name`
+
+`git config --global user.email`
 
 Después de esto, es necesario crear un cartafol (directorio), donde irá el repositorio.
 
@@ -18,17 +19,16 @@ Después de esto, es necesario crear un cartafol (directorio), donde irá el rep
 1.	**Repositorio:**
 Aquí tenemos acumulados los cambios. Para pasar a la siguiente etapa debemos hacer un “pull” del sitio donde la información fue cambiada.
 
-```
-git pull
-```
+`git pull`
 
-1.	**Cartafol de traballo:**
+2.	**Cartafol de traballo:**
 Aquí estamos cambiando el contenido de los archivos. Para esto tenemos que hacer un “git add”. De esta manera los estamos añadiendo al repositorio.
 
-```
-git add <archivo>
-```
+`git add <archivo>`
 
-1.	**Preparación:**
-Para esto tenemos que hacer un commit, que tiene que llevar un mensaje claro identificándose.
-git commit -m “mensaje”
+3.	**Preparación:**
+Para esto tenemos que hacer un commit, que tiene que llevar un mensaje claro identificándose. Después se hace un "push".
+
+`git commit -m “mensaje”`
+
+`git push`
