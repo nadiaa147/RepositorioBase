@@ -69,7 +69,7 @@ emoji 😎 ( : + código)
 
 $$V_{sphere} = \frac{4}{3}\pi r^3$$
 
-![logo gitea](logo.svg)
+![logo gitea](Images/logo.svg)
 
 
 `filter(function, sequence)`
