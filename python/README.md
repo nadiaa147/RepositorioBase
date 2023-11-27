@@ -14,9 +14,27 @@ A diferencia de markdown, que solo ayuda a la legibilidad de un texto, Python pu
 - *Tipado dinámico:* En este tipado la diferenciación se hace sobre la marcha.
                      Se asigna el tipo cuando se define el valor.
 
+
 ```
 Qué son las librerías?
 
 Es donde se guardan programas auxiliares
 ```
+
+## *En Python:*
+
+`#: Utilizado para comentar lo que hacemos`
+
+
+`\: Se usa para continuar la línea abajo ya que una misma instrucción puede estar dividida en varias líneas.`
+
+### Identación:
+
+
+
+
+
+
+
+
 
