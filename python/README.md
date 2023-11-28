@@ -30,6 +30,16 @@ Es donde se guardan programas auxiliares
 
 ### Identación:
 
+Se usa para mover algo a la derecha para indicar que forma parte del bloque anterior.
+Se puede usar el tabulador o 4 espacios.
+
+
+
+```mermaid
+graph TD;
+    TIPOS DE DATOS-->Numéricos;
+    TIPOS DE DATOS-->Textos
+```
 
 
 
