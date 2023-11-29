@@ -34,17 +34,19 @@ Se usa para mover algo a la derecha para indicar que forma parte del bloque ante
 Se puede usar el tabulador o 4 espacios.
 
 
+----
+
+
 
 ```mermaid
-graph TD;
-    TIPOS DE DATOS-->Numéricos;
-    TIPOS DE DATOS-->Textos
+flowchart TD
+    A[Tipos de variables] --> B(Numéricos)
+    A[Tipos de variables] --> C(Texto)
+    A[Tipos de variables] --> D(Boleano)
+    B(Numéricos) --> E(Enteros)
+    B(Numéricos) --> F(Decimales)
+    B(Numéricos) --> G(Complejos)
+    C(Texto) --> H(Cadenas)
+    D(Boleano) --> I(True)
+    D(Boleano) --> J(False)
 ```
-
-
-
-
-
-
-
-
