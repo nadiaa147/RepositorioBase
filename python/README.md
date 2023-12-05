@@ -50,3 +50,22 @@ flowchart TD
     D(Boleano) --> I(True)
     D(Boleano) --> J(False)
 ```
+
+
+---
+
+
+```mermaid
+flowchart TD
+    A[Tipos de operadores] --> B(Aritméticos)
+    A[Tipos de operadores] --> C(Comparación)
+    A[Tipos de operadores] --> D(Lógicos)
+    A[Tipos de operadores] --> E(Asignación)
+    A[Tipos de operadores] --> F(Especiales)
+    B(Aritméticos) --> E(Enteros)
+    B(Aritméticos) --> F(Decimales)
+    B(Aritméticos) --> G(Complejos)
+    C(Comparación) --> H(Cadenas)
+    D(Lógicos) --> I(True)
+    D(Lógicos) --> J(False)
+```
