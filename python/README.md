@@ -62,11 +62,12 @@ flowchart TD
     A[Tipos de operadores] --> D(Lógicos)
     A[Tipos de operadores] --> E(Asignación)
     A[Tipos de operadores] --> F(Especiales)
-    B(Aritméticos) --> E(Enteros)
-    B(Aritméticos) --> F(Decimales)
-    B(Aritméticos) --> G(Complejos)
-    C(Comparación) --> H(Cadenas)
-    D(Lógicos) --> I(True)
-    D(Lógicos) --> J(False)
+    B[Aritméticos] --> G(Suma)
+    G(Suma) --> H(Resta)
+    H(Resta) --> I(Multiplicación)
+    I(Multiplicación) --> J(División)
+    J(División) --> K(Exponente)
+    K(Exponente) --> L(Módulo)
+    L(Módulo) --> M(División entera)
 ```
 
