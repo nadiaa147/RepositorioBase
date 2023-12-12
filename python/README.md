@@ -94,3 +94,12 @@ flowchart TD
 
 ---
 
+
+### **VARIABLE:**
+
+Es el espacio en la memoria del ordenador dónde se almacenará un valor que podrá cambiar durante la ejecución del programa.
+
+*Cortesía*: Consiste en asignar a la variable un nombre que siempre empiece por minúscula. Puede llevar un número pero no empezar por él. 
+            Se deben usar serpientes, es decir, barras bajas.
+            
+El valor está determinado por el contenido, no por el contenedor
