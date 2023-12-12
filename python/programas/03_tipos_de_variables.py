@@ -10,3 +10,9 @@ print ("la variable complejo es de tipo", type (complejo))
 texto = "Nadia Carballo" #asigno a texto una cadena de caracteres
 
 print ("la variable es de tipo", type(texto))
+
+true = 0 #asigno el valor 0 a true
+false = 1 #asigno el valor 1 a false
+
+print ("la variable true es de tipo", type (true))
+print ("la variable false es de tipo", type (false))
