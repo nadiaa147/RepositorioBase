@@ -23,7 +23,7 @@ Es donde se guardan programas auxiliares
 
 ## *En Python:*
 
-`#: Utilizado para comentar lo que hacemos`
+`#: Es un comentario. Es Utilizado para comentar lo que hacemos`
 
 
 `\: Se usa para continuar la línea abajo ya que una misma instrucción puede estar dividida en varias líneas.`
@@ -63,11 +63,34 @@ flowchart TD
     A[Tipos de operadores] --> E(Asignación)
     A[Tipos de operadores] --> F(Especiales)
     B[Aritméticos] --> G(Suma)
-    G(Suma) --> H(Resta)
-    H(Resta) --> I(Multiplicación)
-    I(Multiplicación) --> J(División)
-    J(División) --> K(Exponente)
-    K(Exponente) --> L(Módulo)
-    L(Módulo) --> M(División entera)
+    G(Suma) --- H(Resta)
+    H(Resta) --- I(Multiplicación)
+    I(Multiplicación) --- J(División)
+    J(División) --- K(Exponente)
+    K(Exponente) --- L(Módulo)
+    L(Módulo) --- M(División entera)
+    C[Comparación] --> N(Igual que: ==)
+    N(Igual que: ==) --- O(Diferente de: !=)
+    O(Diferente de: !=) --- P(Mayor que: >)
+    P(Mayor que: >) --- Q(Menor que: <)
+    Q(Menor que: <) --- R(Mayor y igual que: >=)
+    R(Mayor y igual que: >=) --- S(Menor y igual que: <=)
+    D[Lógicos] --> T(AND)
+    T(And) --- U(OR)
+    U(OR) --- V(NOT)
+    F[Especiales] --> W(IS)
+    W(IS) --- X(IS NOT)
+    X(IS NOT) --- Y(IN)
+    Y(IN) --- Z(NOT IN)
+    E[Asignación] -->  AA(Igual: =)
+    AA(Igual: =) --- AB(Incremento: +=)
+    AB(Incremento: +=) --- AC(Decremento: -=)
+    AC(Decremento: -=) --- AD(Dividir: /*)
+    AD(Dividir: /*) --- AE(Multiplicar: *x)
+    AE(Multiplicar: *x) --- AF(Cociente: //*)
+    AF(Cociente: //*) --- AG(Potencia: **x)
 ```
+
+
+---
 
