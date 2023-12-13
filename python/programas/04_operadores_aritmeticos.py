@@ -31,17 +31,24 @@ resultado = g / h #indico la división
 print (resultado)
 
 
-i = 9 #asignamos un valor a i
-j = 2 #asignamos un valor a j
+i = 2 #asignamos un valor a i
+j = 6 #asignamos un valor a j
 
-resultado = i // j #indico la división entera
+resultado = 2**6
 
 print (resultado)
 
-i = 9 #asignamos un valor a i
-j = 2 #asignamos un valor a j
+k = 9 #asignamos un valor a i
+l = 2 #asignamos un valor a j
 
-resultado = i % j #indico el resultado
+resultado = k // l #indico la división entera
+
+print (resultado)
+
+k = 9 #asignamos un valor a i
+l = 2 #asignamos un valor a j
+
+resultado = k % l #indico el resultado
 
 print (resultado)
 
