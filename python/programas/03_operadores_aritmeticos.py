@@ -34,7 +34,7 @@ print (resultado)
 i = 2 #asignamos un valor a i
 j = 6 #asignamos un valor a j
 
-resultado = 2**6
+resultado = 2**6 #indico un exponente
 
 print (resultado)
 
