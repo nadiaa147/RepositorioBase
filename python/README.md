@@ -103,3 +103,30 @@ Es el espacio en la memoria del ordenador dónde se almacenará un valor que pod
             Se deben usar serpientes, es decir, barras bajas.
             
 El valor está determinado por el contenido, no por el contenedor
+
+
+```
+"número = 5"
+
+"número" es el contenedor y "5" es el contenido
+```
+
+
+Para que nos diga el tipo debemos usar:
+
+`print type (nombre)`
+
+
+### **FUNCIONES:**
+
+Son un conxunto de lineas de código agrupadas que funcionan como unha unidad realizando unha tarea específica.
+Pueden devolver valores ou non e poden ter parámetros ou non.
+
+En *POO* (Programación Orientada a Objeto) se llaman métodos.
+Una función de un objeto, en realidad, es un método. Primero se definen y después se les llama, por lo tanto tienen nombre
+
+
+
+
+
+
