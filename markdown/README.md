@@ -1,3 +1,7 @@
+
+Markdown es un lenguaje de marcado. Se ultiliza para tener un diseño legible de una página web o documento.
+La extensión de un fichero con este lenguaje se llama README.md
+
 # *Cabeceira 1*
 ## Cabeceira 2
 ### Cabeceira 3
