@@ -125,6 +125,9 @@ Pueden devolver valores ou non e poden ter parámetros ou non.
 En *POO* (Programación Orientada a Objeto) se llaman métodos.
 Una función de un objeto, en realidad, es un método. Primero se definen y después se les llama, por lo tanto tienen nombre
 
+Una función es un objeto que en realidad puede ser un método. Primero se definen y después se les llama, por lo tanto tienen nombre.
+
+### *Sintaxis:*
 
 
 
