@@ -1,0 +1,2 @@
+print ("Tabla de multiplicar:")
+
