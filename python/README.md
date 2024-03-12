@@ -127,7 +127,94 @@ Una función de un objeto, en realidad, es un método. Primero se definen y desp
 
 Una función es un objeto que en realidad puede ser un método. Primero se definen y después se les llama, por lo tanto tienen nombre.
 
-### *Sintaxis:*
+#### *Sintaxis:*
+
+```
+def nombre_función(parámetros):
+  instrucións da función
+  return (opcional)
+```
+La primera línea es la declaración de la función, y el código que forma parte de esta debe ir identado.
+
+#### *Ejecución:*
+Consiste en llamar a la función
+
+Si la función no recibe parámetros:
+`nombre_función()`
+
+Si los recibe:
+`nombre_funición(parámetros)`
+
+
+El **flujo de ejecución** de un programa siempre va de arriba a abajo excepto si se encuentra con funciones y bucles. 
+
+
+### **LISTAS:**
+
+Estructuras de datos que nos permiten almacenar grandes cantidad de valores. (Equivalente a los array en otros lenguajes de programación).
+En Python las listas pueden guardas varios tipos de valores.
+Se pueden expandir dinámicamente añadiendo nuevos elementos. De esta manera las listas se pueden ampliar (es una novedad en cuanto a otros lenguajes).
+
+#### *Sintaxis:*
+`nombreLista= [elem1, elem2, elem3, ...]`
+
+La posición del elemento dentro de la lista es el índice. Este empieza en "0"
+Cuando queremos imprimir la lista entera, la sintaxis sería la siguiente:
+
+`print(miLista[:])`
+
+Cuando queremos acceder a un elemento en concreto habría que escribir el índice de este elemento.
+
+`print(miLista[<un número>])`
+
+### *Métodos de listas:*
+Un método es una función dentro de un objeto.
+El método
+`append`
+agrega elementos a la lista.
+
+```
+miLista.append("<elem>")
+```
+
+Si queremos agregar el elemento en un lugar específico debemos utilizar `insert`.
+
+```
+miLista.insert(<índice>,<elem>)
+```
+
+`extend` se utiliza para agregar otra lista, no nuevos elementos.
+
+```
+miLista.extend(["<elem>","<elem>","<elem>"])
+```
+
+Utilizamos `index` para saber el índice de algún elemento.
+
+```
+print(miLista.index(“<elem>”))
+```
+
+### *Funciones:*
+
+- `in` es una función interna. Se usa para saber si hay o buscar algún elemento en la lista.
+- `remove` se usa para borrar un elemento de la lista.
+- `pop` se usa para eliminar el último elemento de una lista.
+
+#### *Operadores:*
+
+Con el operador (+) **suma** se pueden unir listas. Es el “catenador” o “cat”.
+Con el operador (*) **multiplicación**  podemos repetir la lista la cantidad de veces por las que la multipliquemos.
+
+
+### **ESTRUCTURAS DE CONTROL DE FLUJO:**
+
+El flujo de ejecución de un programa es el **orden** en el que se ejecutan sus instrucciones.
+En Python, normalmente, el orden normal es de arriba abajo. Pero hay estructuras de control de fujo que modifican las instrucciones.
+
+Las estructuras condicionales pueden romper este flujo. Las condiciones a evaluar dan como resultado verdadero (true) o falso (false). Si la condición es verdadera se ejecutan los bloques identados dentro del IF, si es falsa, el resto de instrucciones no se ejecutan, por lo que se rompe el flujo normal. Después continua haciendo el resto de instrucciones.
+
+  #### *Condicionales:*
 
 
 
