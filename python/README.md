@@ -212,10 +212,29 @@ Con el operador (*) **multiplicación**  podemos repetir la lista la cantidad de
 El flujo de ejecución de un programa es el **orden** en el que se ejecutan sus instrucciones.
 En Python, normalmente, el orden normal es de arriba abajo. Pero hay estructuras de control de fujo que modifican las instrucciones.
 
-Las estructuras condicionales pueden romper este flujo. Las condiciones a evaluar dan como resultado verdadero (true) o falso (false). Si la condición es verdadera se ejecutan los bloques identados dentro del IF, si es falsa, el resto de instrucciones no se ejecutan, por lo que se rompe el flujo normal. Después continua haciendo el resto de instrucciones.
+Las estructuras condicionales pueden romper este flujo.
 
-  #### *Condicionales:*
+-  #### *Condicionales:*
 
+Las condiciones a evaluar dan como resultado verdadero (true) o falso (false). Si la condición es verdadera se ejecutan los bloques identados dentro del IF, si es falsa, el resto de instrucciones no se ejecutan, por lo que se rompe el flujo normal. Después se continua haciendo el resto de instrucciones.
+
+  #### *Sintaxis:*
+
+```
+if <condición>
+  *identación*
+```
+
+--------------------------------------------------
+
+- En Python existe la función `input`, que es predefinida y sirve para introducir datos por el teclado. Lo que recibe lo convierte en datos de texto.
+- `int(_)` transforma en entero los distintos parámetros.
+
+---------------------------------------------------
+
+**Ámbito de una variable:** La parte del programa desde donde es accesible la variable. Si una variable es global es accesible en todo el programa.
+
+`else` (y si no es verdad) se ejecuta cuando la condición da como resultado falso. Se usa para ejecutar un código sin que sea una condición. Siempre es compañero del if más cercano.
 
 
 
