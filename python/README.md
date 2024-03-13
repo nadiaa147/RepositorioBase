@@ -237,5 +237,73 @@ if <condición>
 `else` (y si no es verdad) se ejecuta cuando la condición da como resultado falso. Se usa para ejecutar un código sin que sea una condición. Siempre es compañero del if más cercano.
 
 
+En los condicionales podemos usar operadores boleanos: *or* (+), *and*(x) o *not*
+El resultado puede ser verdadero o falso.
 
+ #### AND
+a x b  | S
+-------|---
+0 x 0  | 0
+0 x 1  | 0
+1 x 0  | 0
+1 x 1  | 1
 
+#### OR
+a + b  | S
+-------|---
+0 + 0  | 0
+0 + 1  | 1
+1 + 0  | 1
+1 + 1  | 1
+
+#### NOT
+a | S
+--|---
+0 | 1
+1 | 0
+
+-------------
+
+En los condicionales también podemos usar el comando `in`. Este sirve para comprobar si una palabra está dento de una secuencia.
+
+### **BUCLES:**
+
+Los bucles pueden ser:
+
+- Determinados: Sabemos el número de veces que se ejecutan.
+- Indeterminados: No se sabe cuantas veces se va a ejecutar.
+
+Cuando se entra en bucle el programa no avanza hasta que se salga de él.
+
+#### **Sintaxis:**
+
+```
+for <variable> in <elem a recorrer>
+```
+El elemento a recorrer puede ser una lista, un rango o una tupla.
+
+Cuando el elemento a iterar es una cadena de texto, la variable vale los caracteres. Si es una lista o tupla vale los elementos de la lista por orden.
+
+Los elemento a recorrer de tipo rango aparecen con la función `range ()`
+A la función se le pasa un parámetro, y la función range() devuelve una lista de números enteros, empezando por el 0 y siguiendo según el número de elementos que se le hayan pasado al parámetro.
+
+Si se pasan 2 parámetros devuelve una cantidad de números enteros, que es la diferencia entre los dos. Se empieza por el pequeño.
+
+La función `print()` es formateable, para eso ponemos dentro del paréntesis la letra "f" , y a partir de entonces podemos usar variables dentro de cadenas de texto con sustitución poniéndola entre corchetes.
+
+```
+i = "perico"
+  print (f"buenos días")
+```
+
+Hay que crear una función que devuelva el valor de las vocales que tiene ese textos.
+
+#### *Sintaxis:*
+
+```
+
+```
+
+```
+
+```
