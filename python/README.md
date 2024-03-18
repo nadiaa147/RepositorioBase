@@ -284,7 +284,9 @@ El elemento a recorrer puede ser una lista, un rango o una tupla.
 
 Cuando el elemento a iterar es una cadena de texto, la variable vale los caracteres. Si es una lista o tupla vale los elementos de la lista por orden.
 
-Los elemento a recorrer de tipo rango aparecen con la función `range ()`
+#### *Range:*
+
+Los elementos a recorrer de tipo rango aparecen con la función `range ()`
 A la función se le pasa un parámetro, y la función range() devuelve una lista de números enteros, empezando por el 0 y siguiendo según el número de elementos que se le hayan pasado al parámetro.
 
 Si se pasan 2 parámetros devuelve una cantidad de números enteros, que es la diferencia entre los dos. Se empieza por el pequeño.
@@ -298,12 +300,35 @@ i = "perico"
 
 Hay que crear una función que devuelva el valor de las vocales que tiene ese textos.
 
+#### *While:*
+
+Ejecuta todo el cuerpo y vuelve a mirar la condición para ver si es verdadero.
+Es un bucle infinito.
+Su problema es que se podría seguir ejecutando siempre:
+
+```
+**While: True**
+```
+Para salir del bucle se usa el comando 'break'
+
+- 'continue': Sirve para que el bucle pase a la siguiente iteración.
+- 'pass': Devuelve un null, es decir, no ejecuta. Se emplea para que no se de un error en python al faltar información en los distintos bucles.
+- 'else': Se utiliza para lo mismo que un if
+
+### **TUPLAS:**
+
+#### *Características:*
+
+- Listas inmutables: No se pueden cambiar después de su creación.
+- Más rápidas.
+- Ocupan menos memoria.
+- No permiten búsquedas ya que no tienen índice.
+- Formatean strings
+
+A diferencia de las listas, estas pueden usarse como claves en diccionarios.
+
 #### *Sintaxis:*
 
 ```
-
-```
-
-```
-
+<nombreTupla>=(<elem1>, <elem2>, elem3,...)
 ```
