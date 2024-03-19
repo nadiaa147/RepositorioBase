@@ -10,8 +10,7 @@ objetos = ['espada', 'equipo de buceo', 'tiburón', 'peces', 'cofre', 'perla']
 
 direcciones = ['norte', 'sur', 'este', 'oeste']
 
-# Mapa del plano
-#
+# Mapa del plano con sus salidas
 
 salidas = {}
 salidas [(0,0)] = ["norte", "oeste"]
@@ -135,10 +134,11 @@ if v == 'usar':
         tieneEspada = True
     return
 elif v == 'poner':
-    if c == 'Equipo de buceo':
+    if c == 'equipo de buceo':
         print ('Te has puesto el equipo de buceo.')
         print ('Ya puedes entrar en el agua.')
         tieneEquipodebuceo = True
+        inventario.remove(objeto) 
     return
 
 else:
@@ -273,72 +273,83 @@ else:
     yaDescrito = False
     return
 
-	if verbo == 'poner': 
+if verbo == 'poner': 
 	# Asegurarse que se indica lo que se quiere poner 
 	    if len(palabras) == 1:
-	    print ('Perdona... ¿el qué?')
-	    return
+	        print ('Perdona... ¿el qué?')
+	        return
 	    else:
 	# Enviar a la función que gestiona el alimento, tanto si 
 	# come o bebe como el qué 
 	        proteccionAtaque(verbo, palabras[1]) 
 	    return 
 	# Coger objetos 
-	if verbo == 'coger': 
-	# Asegurarse que se indica lo que se quiere coger 
-	    if len(palabras) == 1: 
-	    print ( 'Perdona... ¿coger qué?') 
-	    return 
-	    else: 
-	        objeto = palabras[1] 
+if verbo == 'coger':
+	# Asegurarse que se indica lo que se quiere coger
+	if len(palabras) == 1:
+	    print ('Perdona... ¿coger qué?')
+	    return
+	else:
+	    objeto = palabras[1]
+	        
 	# Comprobar que el objeto está en el espacio 
-	            if objeto in mapa[(fila,columna)]: 
-	# Añadirlo al inventario y quitarlo de la sala 
-	                inventario.append(objeto) 
-	                mapa[(fila,columna)].remove(objeto) 
-	# Confirmar la acción 
-	                print ( 'Llevas contigo: ' + objeto) 
-	            elif (fila,columna)== (3,4) and objeto == "perla" and not tienePerla:
-	# Añadir la llave al inventario 
-                	inventario.append(objeto) 
-                	tienePerla = True
-	# Confirmar la acción 
-	                print ( 'Llevas contigo: ' + objeto) 
-	            elif (fila,columna)== (3,2) and objeto == 'espada' and not tieneEspada:
-	# Añadir la espada al inventario 
-	                inventario.append(objeto) 
-	                tieneEspada = True 
-	# Confirmar la acción 
-	                print ( 'Llevas contigo: ' + objeto) 
-	else: 
-	    print ( 'No puedo hacer eso.') 
-	    return 
+if objeto in mapa[(fila,columna)]:
+    # Añadirlo al inventario y quitarlo de la sala
+    inventario.append(objeto)
+    mapa[(fila,columna)].remove(objeto)
+	# Confirmar la acción
+    print ("Llevas contigo:" + objeto)
+    return
+elif (fila,columna)== (3,4) and objeto == "perla" and not tienePerla:
+	# Añadir la perla al inventario
+	inventario.append(objeto)
+	tienePerla = True
+	# Confirmar la acción
+	print ( 'Llevas contigo: ' + objeto)
+
+elif (fila,columna)== (3,2) and objeto == 'espada' and not tieneEspada:
+	# Añadir la espada al inventario
+	inventario.append(objeto)
+	tieneEspada = True 
+	# Confirmar la acción
+	print ( 'Llevas contigo: ' + objeto)
+
+elif (fila,columna)== (2,0) and objeto == 'equipo de buceo' and not tieneEquipodebuceo:
+	# Añadir la espada al inventario
+	inventario.append(objeto)
+	tieneEquipodebuceo = True 
+	# Confirmar la acción
+	print ( 'Llevas contigo: ' + objeto)
+
+else:
+    print ( 'No puedo hacer eso.')
+    return 
 	
 	# Mostrar el inventario 
 if verbo == 'inventario': 
-	# Verificar que llevas algo 
+    # Verificar que llevas algo
     if inventario == []: 
-	    print ( 'No llevas nada') 
-	    return 
-	# Listar tus objetos 
-	print ( 'Llevas contigo',) 
-	for i in inventario: 
-	print ( i) 
-	print () 
-	return 
+        print ( 'No llevas nada') 
+        return 
+    # Listar tus objetos
+    print("Llevas contigo" + objeto) 
+    for i in inventario: 
+        print(i) 
+        print() 
+    return 
 	# Atacar al troll 
 
 	
 	# Función que gestiona las felicitaciones al ganar el juego 
-	def ganar(): 
-	print ( '******************************************') 
-	print ( '¡El resplandor de las joyas te deslumbra!') 
-	print ( '******** ENHORABUENA, ENCONTRASTE ********') 
-	print ( '********* EL COFRE QUE BUSCABAS ***********') 
-	print ( '******************************************') 
+def ganar():
+    print ( '******************************************') 
+    print ( '¡El resplandor de las joyas te deslumbra!') 
+    print ( '******** ENHORABUENA, ENCONTRASTE ********') 
+    print ( '********* EL COFRE QUE BUSCABAS ***********')
+    print ( '******************************************') 
 	
 	# Bucle general, necesario por si se quiere volver a jugar 
-	while True: 
+while True: 
 	# Primero inicializamos las variables del juego 
 	
 	# Posición
@@ -346,91 +357,91 @@ if verbo == 'inventario':
 	columna = 2 
 	
 	# Indicadores del estado del jugador 
-	tieneEspada = False 
-	tieneEquipodebuceo = False
-	tienePerla = False
-	inventario = [] 
+tieneEspada = False 
+tieneEquipodebuceo = False
+tienePerla = False
+inventario = [] 
 	
 	# Mapa de situación de diferentes objetos 
-	mapa ={} 
-	mapa [(0,0)] = []
-    mapa [(1,0)] = []
-    mapa [(2,0)] = ["equipo de buceo"]
-    mapa [(0,1)] = []
-    mapa [(0,2)] = ["peces"]
-    mapa [(0,3)] = []
-    mapa [(0,4)] = ["tiburón"]
-    mapa [(0,5)] = ["cofre"]
-    mapa [(1,1)] = []
-    mapa [(1,2)] = []
-    mapa [(1,3)] = ["peces"]
-    mapa [(1,4)] = []
-    mapa [(2,1)] = []
-    mapa [(2,2)] = []
-    mapa [(2,3)] = []
-    mapa [(2,4)] = ["peces"]
-    mapa [(3,2)] = ["espada"]
-    mapa [(3,3)] = []
-    mapa [(3,4)] = ["perla"]
+mapa ={} 
+mapa [(0,0)] = []
+mapa [(1,0)] = []
+mapa [(2,0)] = ["equipo de buceo"]
+mapa [(0,1)] = []
+mapa [(0,2)] = ["peces"]
+mapa [(0,3)] = []
+mapa [(0,4)] = ["tiburón"]
+mapa [(0,5)] = ["cofre"]
+mapa [(1,1)] = []
+mapa [(1,2)] = []
+mapa [(1,3)] = ["peces"]
+mapa [(1,4)] = []
+mapa [(2,1)] = []
+mapa [(2,2)] = []
+mapa [(2,3)] = []
+mapa [(2,4)] = ["peces"]
+mapa [(3,2)] = ["espada"]
+mapa [(3,3)] = []
+mapa [(3,4)] = ["perla"]
 	
 	# Indicador de partida terminada 
-	juegoAcabado = False 
+juegoAcabado = False 
 	
 	# Indicador para no repetir varias veces la descripción 
-	yaDescrito = False 
+yaDescrito = False 
 	
 	# Contador del tiempo que pasa 
-	tiempo = 0 
+tiempo = 0 
 	
 	# Indicador del tiburón 
-	tiburonVivo = True 
+tiburonVivo = True 
 	
 	# Mostrar la introducción 
-	intro() 
+intro() 
 	
 	# Bucle de juego. Se repite una y otra vez mientras dura el juego 
-	while True: 
-	if not yaDescrito: 
+while True: 
+    if not yaDescrito: 
 	    describir(fila, columna) 
-	yaDescrito = True 
+	    yaDescrito = True 
 	# Pedir al jugador que realice una acción 
-	orden = input('¿Qué quieres hacer? ').lower()
+orden = input('¿Qué quieres hacer? ').lower()
 	
 	# Aumentar el tiempo 
-	tiempo = tiempo + 1 
+tiempo = tiempo + 1 
 	
 	# Procesar la acción y ejecutarla 
-	procesar(orden) 
+procesar(orden) 
 	# Si no se ha bebido pasado un tiempo, se pierde si ya no se ha hecho 
-	if tiempo>25 and not haBebido and not juegoAcabado: 
-	    print ('Tu bombona de oxígeno se ha terminado') 
-	    time.sleep(1) 
-	    print ('Te quedas sin aire y te desmayas...') 
-    	time.sleep(1) 
-	    juegoAcabado = True 
+if tiempo>25 and not haBebido and not juegoAcabado: 
+    print ('Tu bombona de oxígeno se ha terminado') 
+    time.sleep(1) 
+    print ('Te quedas sin aire y te desmayas...')
+    juegoAcabado = True 
 	# Si has pasado demasiado tiempo en presencia del tiburón 
 	# o si está activo, te ataca. 
 	# Pero siempre que no lo haya hecho ya y estés muerto 
-	if tiburonVivo: 
-	    print ( 'El tiburón te ataca...') 
-	    time.sleep(1) 
+if tiburonVivo: 
+    print ( 'El tiburón te ataca...') 
+    time.sleep(1) 
 	# Si el jugador está armado, dar una oportunidad 
-	    if tieneEspada: 
-    	    tiburonVivo = False
-    	    print ("Has matado al tiburón")
-    	else: 
-	        print ('No puedes hacer nada contra el tiburón.') 
-	        time.sleep(0.5) 
-	        print ('Este te ataca rápidamente.') 
-	        juegoAcabado = True 
+    if tieneEspada: 
+	    tiburonVivo = False
+	    print ("Has matado al tiburón")
+
+    else:
+        print ('No puedes hacer nada contra el tiburón.') 
+        time.sleep(0.5) 
+        print ('Este te ataca rápidamente.') 
+        juegoAcabado = True 
 
 	# Si el juego ha terminado, salir del bucle 
-	if juegoAcabado: 
-	    break 
-	print () 
-	print ( '---------------------------------------------------') 
-	continuar = input('¿Quieres jugar otra vez? ').lower().startswith('s') 
-	if not continuar: 
-    	break 
-	print ( '---------------------------------------------------') 
-	print ()
+if juegoAcabado: 
+    break 
+print () 
+print ( '---------------------------------------------------') 
+continuar = input('¿Quieres jugar otra vez? ').lower().startswith('s') 
+if not continuar: 
+	break 
+print ( '---------------------------------------------------') 
+print ()
