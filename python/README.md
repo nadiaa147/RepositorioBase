@@ -332,3 +332,38 @@ A diferencia de las listas, estas pueden usarse como claves en diccionarios.
 ```
 <nombreTupla>=(<elem1>, <elem2>, elem3,...)
 ```
+
+El comando reservado `list` me da como resultado una lista de una tupla.
+La palabra reservada `tuple` devuelve una tupla de una lista.
+
+`in`: Nos permite comprobar si hay elementos dentro.
+
+`count`: Cuenta los elementos dentro de una tupla.
+
+```
+<nombretupla>.count(elemento a contar)
+```
+La función `len` nos devuelve la longitud de la tupla.
+
+Si algo va después de un punto es un **método**, si va después de un paréntesis es una **función**.
+
+Una **tupla unitaria** dice el tipo de lo que se le ponga (tipado dinámico).
+
+## **DICCIONARIOS:**
+
+- Son estructuras de datos que nos permite almacenar valores de diferente tipo (enteros, cadenas de texto, decimales) e incluso listas y otros diccionarios.
+- La principal Característica de los diccionarios es que los datos se almacenan asociados a una clave de tal forma que se crea una asociación de tipo 'clave: valor' para cada elemento almacenado.
+- Los elementos almacenados no están ordenados. El orden es indiferente a la hora de almacenar ingormación en un diccionario.
+
+## **GENERADORES:**
+
+Son estructuras que extraen valores de una función y se almacenan en objetos *iterables* (que se pueden recorrer). Los valores se almacenan de uno en uno.
+Cada vez que se almacena un valor, este permanece en un estado pausado hasta que se solicita el siguiente. A esta característica se le conoce como *suspensión de estado*.
+   
+   - ** Función tradicional**: Def generaNúmeros():
+                                     return números.
+   - **Generador**: Def generaNumeros():         
+                           yield numeros
+
+
+
