@@ -357,13 +357,30 @@ Una **tupla unitaria** dice el tipo de lo que se le ponga (tipado dinámico).
 
 ## **GENERADORES:**
 
-Son estructuras que extraen valores de una función y se almacenan en objetos *iterables* (que se pueden recorrer). Los valores se almacenan de uno en uno.
-Cada vez que se almacena un valor, este permanece en un estado pausado hasta que se solicita el siguiente. A esta característica se le conoce como *suspensión de estado*.
-   
-   - ** Función tradicional**: Def generaNúmeros():
-                                     return números.
-   - **Generador**: Def generaNumeros():         
-                           yield numeros
+Características:
+
+- Extraen valores de una función.
+- Se almacenan en objetos iterables.
+- Los valores se almacenan de uno en uno. (Cada vez que se almacena un valor, este permanece en un estado pausado hasta que se solicita el siguiente.)
+  A esto se le conoce como **suspensión de estado**.
+
+### *Sintaxis:*
+
+**Función tradicional**:
+
+```
+def generaNúmeros():
+  return números
+```
+
+**Generador**:
+
+```
+def generaNúmeros():
+  yield numeros
+```
+
+`yield`: Simplifica el código de los generadores en el caso de utilizar bucles anidados.
 
 
 
