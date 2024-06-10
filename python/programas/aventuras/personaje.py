@@ -1,6 +1,6 @@
 class Personaje:
 	def __init__(self, nombre, lugar_actual):
-		self.nombre = Nadia
+		self.nombre = nombre
 		self.lugar_actual = lugar_actual
 		self.inventario = []
 
