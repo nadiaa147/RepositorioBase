@@ -41,6 +41,8 @@ class Juego:
 				print("¡Gracias por jugar!")
 				break
 
+			if joya in self.inventario:
+				break
 			else:
 				print("No entiendo este comando.")
 
