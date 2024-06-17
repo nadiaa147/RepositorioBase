@@ -36,15 +36,15 @@ class Personaje:
 		for objeto in self.lugar_actual.objetos:
 			if objeto.nombre.lower() == nombre_objeto.lower():
 				if lugar_actual = [0,0,0]
-					print("en este lugar hay una llave")
-				if lugar_actual = [x,y,z]
-					print("en este lugar hay un")
-				if lugar_actual = [x,y,z]
-					print("en este lugar hay un")
-				if lugar_actual = [x,y,z]
-					print("en este lugar hay un")
-				if lugar_actual = [x,y,z]
-					print("en este lugar hay una")
+					print("en este lugar hay una llave.")
+				if lugar_actual = [0,1,1]
+					print("en este lugar hay un cuchillo.")
+				if lugar_actual = [0,0,1]
+					print("en este lugar hay un bate")
+				if lugar_actual = [0,1,0]
+					print("en este lugar hay una linterna")
+				if lugar_actual = [1,1,1]
+					print("en este lugar hay una joya")
 
 		return
 
