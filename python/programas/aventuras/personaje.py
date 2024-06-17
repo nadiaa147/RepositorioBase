@@ -1,3 +1,6 @@
+from localizacion import *
+from objeto import *
+
 # personaje.py
 class Personaje:
 	def __init__(self, nombre, lugar_actual):
@@ -12,7 +15,7 @@ class Personaje:
 			"arriba": (1,0,0), "abajo": (-1,0,0)
 		}
 
-		if direccion in direcciones:
+		if direccion.lower() in direcciones:
 			nueva_coordenada = tuple(map(sum, zip(self.lugar_actual.coordenadas, direcciones[direccion])))
 			if nueva_coordenada in mapamundi.mapa:
 				self.lugar_actual = mapamundi.mapa[nueva_coordenada]
@@ -32,21 +35,14 @@ class Personaje:
 				return
 		print("No hay tal objeto aquí.")
 
-	def buscar(self, nombre_objeto):
-		for objeto in self.lugar_actual.objetos:
-			if objeto.nombre.lower() == nombre_objeto.lower():
-				if lugar_actual = [0,0,0]
-					print("en este lugar hay una llave.")
-				if lugar_actual = [0,1,1]
-					print("en este lugar hay un cuchillo.")
-				if lugar_actual = [0,0,1]
-					print("en este lugar hay un bate")
-				if lugar_actual = [0,1,0]
-					print("en este lugar hay una linterna")
-				if lugar_actual = [1,1,1]
-					print("en este lugar hay una joya")
+	def buscar(self):
+		if self.lugar_actual.objetos:
+			print("Pudiste encontrar los siguientes objetos:")
+			for i in self.lugar_actual.objetos:
+				print(f"-{i.nombre}")
+		else:
+			print("No encontraste ningún objeto.")
 
-		return
 
 	def mostrar_inventario(self):
 		if self.inventario:

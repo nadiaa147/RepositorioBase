@@ -31,10 +31,7 @@ class Juego:
 				else:
 					print("Qué quieres encender?")
 			elif comando[0] == "buscar":
-				if len(comando) > 1:
-					self.jugador.buscar(" ".join(comando[1:]))
-				else:
-					print("Tienes que buscar objetos.")
+				self.jugador.buscar()
 
 
 			elif comando[0] == "inventario":
