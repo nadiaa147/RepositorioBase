@@ -382,5 +382,54 @@ def generaNúmeros():
 
 `yield`: Simplifica el código de los generadores en el caso de utilizar bucles anidados.
 
+## **EXCEPCIONES:**
+Una excepción es un error durante la *ejecución*. Sucede cuando un programa está correctamente escrito pero ocurre un error inesperado.
+El programa deja de ejecutarse a partir de la línea en la que se generó el error. 
+Para capturar una excepción se utiliza un bloque `try`
 
+```
+try:
+  <código a intentar>
+except <nombre_error1>
+  <código a ejecutar>
+except <nombre_error2>
+  <código a ejecutar>
+```
 
+Para lanzar una ejecución de errores se utiliza `raise`. Este permite poner un texto que explica el error dado.
+
+```
+if <condición>
+  raise <nombre error> ("")
+```
+
+Si la excepción no es capturada se rompe el **flujo del programa**.
+Para capturar un error se debe utilizar “except”.
+
+## **Progamación Orientada a Objetos: POO*
+Consiste en trasladar la naturaleza de los objetos de la vida real al código de programación.
+Un objeto es algo que tiene un *estado*, un *comportamiento* (funciones) y *propiedades* (variables)
+  ### Ventajas:
+    -	Modularización: Es una división de los programas en partes.
+    -	Un código muy reutilizable.
+    -	Uso de excepciones.
+    -	Encapsulamiento.
+
+  ### Clases:
+
+  ```
+class <nombreClase> () :
+  <nombrepropiedad3> = <valor>
+	def <nombreMétodo>(self):
+		<contenidoMétodo>
+	<contenidoClase>
+```
+
+  ### Instancia:
+  Ejemplar perteneciente a una clase.
+
+  ### Modularizacion:
+      Una clase que me puede valer para distintos programas. De esta manera podemos aprovechar clases de un programa a otro programa cuando nos interese. Está compuesta de varias clases. Permite reutilizar componentes o trozos de código de un programa a otro.
+      
+  ### Incapsulación:
+  
