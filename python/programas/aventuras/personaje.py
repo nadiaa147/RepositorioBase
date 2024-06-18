@@ -29,9 +29,14 @@ class Personaje:
 	def recoger(self, nombre_objeto):
 		for objeto in self.lugar_actual.objetos:
 			if objeto.nombre.lower() == nombre_objeto.lower():
+				check = objeto.nombre.lower()
+				print(check)
 				self.inventario.append(objeto)
 				self.lugar_actual.objetos.remove(objeto)
 				print(f"Has recogido el {objeto.nombre}")
+				if check == "joya":
+					print("Felicidades! Acabaste la aventura.")
+					exit()
 				return
 		print("No hay tal objeto aquí.")
 

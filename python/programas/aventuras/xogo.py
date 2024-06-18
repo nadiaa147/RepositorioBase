@@ -9,7 +9,9 @@ class Juego:
 	def jugar(self):
 		print("¡Bienvenido a la aventura de texto!")
 		self.jugador.lugar_actual.mostrar_info()
-		while True:
+		final = False
+		while final == False:
+			print(final)
 			comando = input("\n¿Qué quieres hacer?").lower().split()
 			if len(comando) == 0:
 				continue
@@ -41,8 +43,6 @@ class Juego:
 				print("¡Gracias por jugar!")
 				break
 
-			if joya in self.inventario:
-				break
 			else:
 				print("No entiendo este comando.")
 
