@@ -432,4 +432,91 @@ class <nombreClase> () :
       Una clase que me puede valer para distintos programas. De esta manera podemos aprovechar clases de un programa a otro programa cuando nos interese. Está compuesta de varias clases. Permite reutilizar componentes o trozos de código de un programa a otro.
       
   ### Incapsulación:
-  
+El funcionamiento interno de los objetos es independiente de cada uno. Están encapsulados. Si son métodos o propiedades hay que usar la *nomenclatura del punto*.
+Las variables dentro de un objeto son propiedades, y para acceder a ellas se hace lo siguiente:
+`<nomb.objeto>.<propiedad>`
+Las funciones dentro de un objeto son métodos, para acceder se hace esto:
+`<nomb.objeto>.<método>()`
+
+Cuando se crea un objeto es importante crear un método constructor para que se creen las propiedades comunes. Al creearlos se pueden meter valores que son propiedades. La sintaxis es:
+
+```
+def __init__(self):
+```
+
+Este método `init` da un estado inicial a los objetos que pertenezcan a la clase.
+
+Encapsular sirve para que **no** se pueda **acceder** a un método desde fuera ni bloquear el cambio externo de una propiedad. Además de encapsular propiedades, también se pueden encapsular métodos.
+Para eso también colocaremos 2 barras bajas delante del método: `[self.__ruedas]`
+```
+def __ init__(self, <valor1>, ...):
+  self.<propiedad1>=<valor1>
+```
+Si creeamos una propiedad que no esté igualado a un valor definido en el init, nos dará error.
+
+  ### Herencia:
+Se usa para crear objetos similares **reutilizando** un código. Se tiene una clase, y se utiliza para crear una superclase. 
+Para crear una subclase, la sintaxis es la siguiente:
+```
+class <nombresubclase>(<clasePadre>):
+```
+En una clase hija podemos volver a definir un método (sobre escribir que esté en la clase padre para añadir funcionalidades.)
+
+La **herencia múltiple** consiste en heredar de varias clases. La sintaxis es:
+```
+class <claseHija>(<NombreClase1>, <NombreClase2>, ...):
+```
+
+Cuidado, cuando hay herencia múltiple, si hay métodos con el mismo nombre en las clases padre, una clase hija hereda solo el del primer padre mencionado, que es el que tiene preferencia.
+Podemos solucionar este problema usando tamén a función:
+```
+super().<nombre_metodo_padre>(<p1>,<p2>,...)
+```
+El nombre del método de la clase padre es __innit__.
+La función `super()` se usa dentro de una clase para llamar a los métodos de la clase padre.
+
+El **principio de sustitución** dice que un objeto de la subclase siempre será un objeto de la superclase.
+En Python existe la función `isinstance()` que nos dice si un objeto pertenece a una clase en concreto. Puede devolver True o False.
+
+### Polimorfismo
+
+Si varias clases tienen métodos que se llaman igual podemos crear una función en la que se pasa como parámetro un objeto y que ejecutará el método de la clase del objeto. El método es invocado por la función.
+
+## **Método de Cadenas**:
+
+Una cadena es un conjunto de caracteres unidos. Es un objeto, por lo tanto también tiene métodos.
+
+| Método | Qué hace? |
+|--------|-----------|
+|upper() | Pone todo en mayúsculas. |
+|lower() | Pone todo en minúsculas. |
+|capitalize() | Pone la primera en mayúsculas. |
+|count() |  Cuenta el numero veces que se repite una letra que nosotros escogemos. |
+|find() | Nos dice en qué posición se encuentra algo. |
+|isdigit() | Nos dice si es un número en la frase. |
+|isalum() | Comprueba si son letras y números. |
+|isalpha() | Comprueba si son solo letras. |
+|split() | Separa palabras. |
+|strip() | Borra espacios sobrantes al principio y al final. |
+|replace() | Cambia un carácter por otro. |
+|refind() | Nos dice en qué posición se encuentra algo pero empezando por el final. |
+
+## **Módulos**:
+Son conjuntos de *funciones*, *clases* y *variables* que se encuentran juntos en un archivo con extensión `.py` o `.pyc`
+Se usan para organizar y reutilizar el código.
+
+Para usar un módulo hay que invocarlo con la función:
+```
+import <nombre del módulo>
+```
+También hay que usar la **nomenclatura del punto**, importando así cada parte del módulo que vayamos utilizando.
+
+También podemos usar otra sintaxis en el caso de **no** querer usar la **nomenclatura del punto**:
+```
+from <nombre del módulo>  import *
+```
+
+Muchas veces solo consiste en una lista de funciones.
+
+
+
